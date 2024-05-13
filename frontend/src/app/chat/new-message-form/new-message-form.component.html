@@ -1,0 +1,16 @@
+<form (ngSubmit)="onSend()" [formGroup]="messageForm">
+  <input name="message" type="text" formControlName="msg" />
+  <input
+    #file
+    name="file"
+    type="file"
+    style="display: none"
+    accept="image/*"
+    formControlName="filename"
+    (change)="fileChanged($event)"
+  />
+  <span (click)="file.click()"
+    ><img src="/assets/image-icon.svg" height="25px"
+  /></span>
+  <button type="submit">></button>
+</form>

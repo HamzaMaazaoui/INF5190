@@ -1,0 +1,15 @@
+.messages {
+  height: 70vh;
+  overflow-y: scroll;
+  text-align: left;
+  padding: 30px;
+}
+
+p {
+  margin: 10px;
+}
+
+.chat-image {
+  max-width: 300px;
+  max-height: 200px;
+}

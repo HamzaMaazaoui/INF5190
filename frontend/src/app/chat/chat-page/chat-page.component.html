@@ -1,0 +1,7 @@
+<div class="quit"><button (click)="onQuit()">Quitter</button></div>
+<div class="chat">
+  <app-messages [messages]="messages$ | async"></app-messages>
+  <app-new-message-form
+    (sendMessage)="onSendMessage($event)"
+  ></app-new-message-form>
+</div>
